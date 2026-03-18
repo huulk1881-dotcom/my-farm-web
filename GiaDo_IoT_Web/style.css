@@ -1,0 +1,201 @@
+body{
+margin:0;
+font-family:Arial;
+
+background: linear-gradient(135deg,#74ebd5,#ACB6E5);
+
+/* CĂN GIỮA */
+display:flex;
+justify-content:center;
+align-items:center;
+
+min-height:100vh;
+}
+
+/* KHUNG CHÍNH */
+.container{
+width:90%;
+max-width:900px;
+
+background:white;
+padding:20px;
+
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+text-align:center;
+}
+
+.menu{
+display:flex;
+justify-content:space-around;
+margin-bottom:20px;
+}
+
+.box{
+width:150px;
+height:80px;
+background:#eee;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:10px;
+cursor:pointer;
+}
+
+.box:hover{
+background:#4CAF50;
+color:white;
+}
+
+.hidden{
+display:none;
+}
+
+/* ===== NHIỆT ĐỘ & ĐỘ ẨM ===== */
+
+.data-box{
+display:flex;
+justify-content:space-between;
+margin:20px 0;
+}
+
+/* Ô nhiệt độ */
+.temp-box{
+width:40%;
+height:120px;
+background:#ffe0e0;
+border-radius:12px;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+font-size:20px;
+font-weight:bold;
+}
+
+/* Ô độ ẩm */
+.hum-box{
+width:40%;
+height:120px;
+background:#e0f7ff;
+border-radius:12px;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+font-size:20px;
+font-weight:bold;
+}
+
+/* Thời gian góc dưới phải */
+.time{
+position:relative;
+text-align:right;
+margin-top:10px;
+font-size:14px;
+color:gray;
+}
+
+/* Biểu đồ */
+canvas{
+margin-top:20px;
+}
+
+@media (max-width: 600px){
+
+.container{
+padding:15px;
+}
+
+/* menu xuống hàng */
+.menu{
+flex-direction:column;
+gap:10px;
+}
+
+/* box full chiều ngang */
+.box{
+width:100%;
+}
+
+/* nhiệt độ & độ ẩm xếp dọc */
+.data-box{
+flex-direction:column;
+gap:10px;
+}
+
+#pumpTable{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+#pumpTable th, #pumpTable td{
+border:1px solid #ddd;
+padding:8px;
+text-align:center;
+}
+
+#pumpTable th{
+background:#4CAF50;
+color:white;
+}
+
+#pumpTable tr:nth-child(even){
+background:#f2f2f2;
+}
+
+.temp-box, .hum-box{
+width:100%;
+}
+
+}
+
+/* ===== MÁY BƠM ===== */
+#pumpTable{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+#pumpTable th, #pumpTable td{
+border:1px solid #ddd;
+padding:8px;
+text-align:center;
+}
+
+#pumpTable th{
+background:#4CAF50;
+color:white;
+}
+
+#pumpTable tr:nth-child(even){
+background:#f2f2f2;
+}
+
+/* ===== LỊCH SỬ TRUY CẬP ===== */
+#historyTable{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+#historyTable th, #historyTable td{
+border:1px solid #ddd;
+padding:8px;
+text-align:center;
+}
+
+#historyTable th{
+background:#2196F3;
+color:white;
+}
+
+#historyTable tr:nth-child(even){
+background:#f2f2f2;
+}

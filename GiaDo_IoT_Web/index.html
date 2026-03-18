@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Farm</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>MY FARM</h1>
+
+<!-- MENU -->
+<div class="menu">
+<div class="box" onclick="showSection('nhietdo')">🌡 Nhiệt độ & Độ ẩm</div>
+<div class="box" onclick="showSection('sintruong')">🌱 Sinh trưởng & Thu hoạch</div>
+<div class="box" onclick="showSection('maybom')">💧 Máy bơm</div>
+<div class="box" onclick="showSection('lichsu')">📊 Lịch sử truy cập</div>
+</div>
+
+<!-- ================= NHIỆT ĐỘ ================= -->
+<div id="nhietdo" class="section hidden">
+
+<h2>Nhiệt độ & Độ ẩm</h2>
+
+<!-- 2 ô nằm ngang -->
+<div class="data-box">
+
+<div class="temp-box">
+<p>🌡 Nhiệt độ</p>
+<span id="temp">--</span>
+</div>
+
+<div class="hum-box">
+<p>💧 Độ ẩm</p>
+<span id="hum">--</span>
+</div>
+
+</div>
+
+<!-- biểu đồ -->
+<canvas id="chart"></canvas>
+
+<!-- thời gian góc phải -->
+<div class="time" id="time"></div>
+
+</div>
+
+<!-- ================= SINH TRƯỞNG ================= -->
+<div id="sintruong" class="section hidden">
+<h2>Sinh trưởng & Thu hoạch</h2>
+<p>Đang phát triển...</p>
+</div>
+
+<!-- ================= MÁY BƠM ================= -->
+<div id="maybom" class="section hidden">
+
+<h2>Điều khiển máy bơm</h2>
+
+<button onclick="batBom()">Bật</button>
+<button onclick="tatBom()">Tắt</button>
+
+<p id="trangthai">Trạng thái: OFF</p>
+
+<h3>Lịch sử bật/tắt</h3>
+
+<table id="pumpTable">
+<tr>
+<th>Thời gian</th>
+<th>Trạng thái</th>
+</tr>
+</table>
+
+</div> 
+
+
+
+<!-- ================= LỊCH SỬ ================= -->
+<div id="lichsu" class="section hidden">
+
+<h2>Lịch sử truy cập</h2>
+
+<table id="historyTable">
+<tr>
+<th>Thời gian</th>
+<th>Mục truy cập</th>
+</tr>
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
