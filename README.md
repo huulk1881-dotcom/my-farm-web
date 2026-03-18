@@ -1,1 +1,6 @@
-6182180569712e6992cb8a270f0ae6624977eba2
+## 📁 GiaDo_IoT_Web
+
+### Danh sách file:
+- index.html
+- style.css
+- config.json
