@@ -1,6 +1,5 @@
-## 📁 GiaDo_IoT_Web
+# my-farm-web
 
-### Danh sách file:
-- index.html
-- style.css
-- script.js
+## 📂 Project Structure
+
+- 📁 [GiaDo_IoT_Web](./GiaDo_IoT_Web) — Source code chính
